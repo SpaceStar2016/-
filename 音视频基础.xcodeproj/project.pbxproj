@@ -20,6 +20,9 @@
 		FCD1D6FC24DAF145007EED8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D6FA24DAF145007EED8C /* Main.storyboard */; };
 		FCD1D6FE24DAF146007EED8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D6FD24DAF146007EED8C /* Assets.xcassets */; };
 		FCD1D70124DAF146007EED8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D6FF24DAF146007EED8C /* LaunchScreen.storyboard */; };
+		FCD1D70724DE355F007EED8C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D70624DE355F007EED8C /* readme.md */; };
+		FCD1D71124DE80E9007EED8C /* src in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D71024DE80E9007EED8C /* src */; };
+		FCD1D71524DE8BAA007EED8C /* src in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D71424DE8BAA007EED8C /* src */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		FCD1D6FD24DAF146007EED8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD1D70024DAF146007EED8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCD1D70224DAF146007EED8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD1D70624DE355F007EED8C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		FCD1D71024DE80E9007EED8C /* src */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = src; sourceTree = SOURCE_ROOT; };
+		FCD1D71424DE8BAA007EED8C /* src */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = src; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		FCD1D6D624DAF0F1007EED8C /* 媒体文件播放_OC */ = {
 			isa = PBXGroup;
 			children = (
+				FCD1D71024DE80E9007EED8C /* src */,
 				FCD1D6D724DAF0F1007EED8C /* AppDelegate.h */,
 				FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */,
 				FCD1D6DA24DAF0F1007EED8C /* SceneDelegate.h */,
@@ -95,6 +102,7 @@
 				FCD1D6E524DAF0F2007EED8C /* LaunchScreen.storyboard */,
 				FCD1D6E824DAF0F2007EED8C /* Info.plist */,
 				FCD1D6E924DAF0F2007EED8C /* main.m */,
+				FCD1D70624DE355F007EED8C /* readme.md */,
 			);
 			path = "媒体文件播放_OC";
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 		FCD1D6F324DAF145007EED8C /* 媒体文件播放_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				FCD1D71424DE8BAA007EED8C /* src */,
 				FCD1D6F424DAF145007EED8C /* AppDelegate.swift */,
 				FCD1D6F624DAF145007EED8C /* SceneDelegate.swift */,
 				FCD1D6F824DAF145007EED8C /* ViewController.swift */,
@@ -194,7 +203,9 @@
 			files = (
 				FCD1D6E724DAF0F2007EED8C /* LaunchScreen.storyboard in Resources */,
 				FCD1D6E424DAF0F2007EED8C /* Assets.xcassets in Resources */,
+				FCD1D70724DE355F007EED8C /* readme.md in Resources */,
 				FCD1D6E224DAF0F1007EED8C /* Main.storyboard in Resources */,
+				FCD1D71124DE80E9007EED8C /* src in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +216,7 @@
 				FCD1D70124DAF146007EED8C /* LaunchScreen.storyboard in Resources */,
 				FCD1D6FE24DAF146007EED8C /* Assets.xcassets in Resources */,
 				FCD1D6FC24DAF145007EED8C /* Main.storyboard in Resources */,
+				FCD1D71524DE8BAA007EED8C /* src in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
