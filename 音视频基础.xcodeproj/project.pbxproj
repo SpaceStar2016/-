@@ -23,6 +23,11 @@
 		FCD1D70724DE355F007EED8C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D70624DE355F007EED8C /* readme.md */; };
 		FCD1D71124DE80E9007EED8C /* src in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D71024DE80E9007EED8C /* src */; };
 		FCD1D71524DE8BAA007EED8C /* src in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D71424DE8BAA007EED8C /* src */; };
+		FCD1D71824E22000007EED8C /* AVPlayViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D71724E22000007EED8C /* AVPlayViewVC.m */; };
+		FCD1D71F24E227DB007EED8C /* AVListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D71D24E227DB007EED8C /* AVListCell.m */; };
+		FCD1D72024E227DB007EED8C /* AVListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D71E24E227DB007EED8C /* AVListCell.xib */; };
+		FCD1D72324E227EE007EED8C /* AVListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D72224E227EE007EED8C /* AVListModel.m */; };
+		FCD1D72624E22C2D007EED8C /* AVPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D72524E22C2D007EED8C /* AVPlayerVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +54,15 @@
 		FCD1D70624DE355F007EED8C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		FCD1D71024DE80E9007EED8C /* src */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = src; sourceTree = SOURCE_ROOT; };
 		FCD1D71424DE8BAA007EED8C /* src */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = src; sourceTree = SOURCE_ROOT; };
+		FCD1D71624E22000007EED8C /* AVPlayViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayViewVC.h; sourceTree = "<group>"; };
+		FCD1D71724E22000007EED8C /* AVPlayViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayViewVC.m; sourceTree = "<group>"; };
+		FCD1D71C24E227DB007EED8C /* AVListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVListCell.h; sourceTree = "<group>"; };
+		FCD1D71D24E227DB007EED8C /* AVListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVListCell.m; sourceTree = "<group>"; };
+		FCD1D71E24E227DB007EED8C /* AVListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVListCell.xib; sourceTree = "<group>"; };
+		FCD1D72124E227EE007EED8C /* AVListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVListModel.h; sourceTree = "<group>"; };
+		FCD1D72224E227EE007EED8C /* AVListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVListModel.m; sourceTree = "<group>"; };
+		FCD1D72424E22C2D007EED8C /* AVPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerVC.h; sourceTree = "<group>"; };
+		FCD1D72524E22C2D007EED8C /* AVPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,9 @@
 		FCD1D6D624DAF0F1007EED8C /* 媒体文件播放_OC */ = {
 			isa = PBXGroup;
 			children = (
+				FCD1D71B24E227B4007EED8C /* Controller */,
+				FCD1D71A24E227AB007EED8C /* Model */,
+				FCD1D71924E227A5007EED8C /* View */,
 				FCD1D71024DE80E9007EED8C /* src */,
 				FCD1D6D724DAF0F1007EED8C /* AppDelegate.h */,
 				FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */,
@@ -120,6 +137,36 @@
 				FCD1D70224DAF146007EED8C /* Info.plist */,
 			);
 			path = "媒体文件播放_Swift";
+			sourceTree = "<group>";
+		};
+		FCD1D71924E227A5007EED8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1D71C24E227DB007EED8C /* AVListCell.h */,
+				FCD1D71D24E227DB007EED8C /* AVListCell.m */,
+				FCD1D71E24E227DB007EED8C /* AVListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCD1D71A24E227AB007EED8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1D72124E227EE007EED8C /* AVListModel.h */,
+				FCD1D72224E227EE007EED8C /* AVListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCD1D71B24E227B4007EED8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1D71624E22000007EED8C /* AVPlayViewVC.h */,
+				FCD1D71724E22000007EED8C /* AVPlayViewVC.m */,
+				FCD1D72424E22C2D007EED8C /* AVPlayerVC.h */,
+				FCD1D72524E22C2D007EED8C /* AVPlayerVC.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +252,7 @@
 				FCD1D6E424DAF0F2007EED8C /* Assets.xcassets in Resources */,
 				FCD1D70724DE355F007EED8C /* readme.md in Resources */,
 				FCD1D6E224DAF0F1007EED8C /* Main.storyboard in Resources */,
+				FCD1D72024E227DB007EED8C /* AVListCell.xib in Resources */,
 				FCD1D71124DE80E9007EED8C /* src in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,9 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD1D71824E22000007EED8C /* AVPlayViewVC.m in Sources */,
 				FCD1D6DF24DAF0F1007EED8C /* ViewController.m in Sources */,
+				FCD1D71F24E227DB007EED8C /* AVListCell.m in Sources */,
 				FCD1D6D924DAF0F1007EED8C /* AppDelegate.m in Sources */,
+				FCD1D72624E22C2D007EED8C /* AVPlayerVC.m in Sources */,
 				FCD1D6EA24DAF0F2007EED8C /* main.m in Sources */,
+				FCD1D72324E227EE007EED8C /* AVListModel.m in Sources */,
 				FCD1D6DC24DAF0F1007EED8C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
