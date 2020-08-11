@@ -8,18 +8,21 @@
 
 #import "AVListCell.h"
 #import "AVListModel.h"
+@interface AVListCell()
+@property (weak, nonatomic) IBOutlet UILabel *ttLabel;
+
+@end
 @implementation AVListCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
 }
 
 -(void)setModel:(AVListModel *)model
 {
     _model = model;
-    
-    self.textLabel.text  = model.title;
+    self.ttLabel.text  = model.title;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

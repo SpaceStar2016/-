@@ -9,24 +9,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4xQ-WB-yYU" style="IBUITableViewCellStyleDefault" id="KGk-i7-Jjw" customClass="AVListCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AVListCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4xQ-WB-yYU">
-                        <rect key="frame" x="16" y="0.0" width="288" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbE-od-lee">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="PbE-od-lee" secondAttribute="bottom" id="MVb-BY-iuK"/>
+                    <constraint firstItem="PbE-od-lee" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="X8m-yP-1eO"/>
+                    <constraint firstItem="PbE-od-lee" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="g15-8X-ula"/>
+                    <constraint firstAttribute="trailing" secondItem="PbE-od-lee" secondAttribute="trailing" id="pfJ-yd-vMF"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
-            <point key="canvasLocation" x="139" y="86"/>
+            <connections>
+                <outlet property="ttLabel" destination="PbE-od-lee" id="GcV-aM-iET"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="70"/>
         </tableViewCell>
     </objects>
 </document>

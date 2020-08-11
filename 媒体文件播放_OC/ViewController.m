@@ -12,7 +12,8 @@
 #import "AVListModel.h"
 #import "AVListCell.h"
 #import "AVPlayViewVC.h"
-#import "AVPlayerVC.h"
+#import "AVPlayerPLocalVC.h"
+#import "AVPlayerPAssetVC.h"
 //#import <AVFoundation/AVFoundation.h>
 
 static NSString * const AVListCellID = @"AVListCell";
@@ -33,20 +34,26 @@ static NSString * const AVListCellID = @"AVListCell";
     UITableView * tableView = [[UITableView alloc] init];
     tableView.frame = CGRectMake(0,64,self.view.frame.size.width,self.view.frame.size.height - 64);
 //    tableView.frame = self.view.bounds;
-    [tableView registerClass:[AVListCell class] forCellReuseIdentifier:AVListCellID];
+//    [tableView registerClass:[AVListCell class] forCellReuseIdentifier:AVListCellID];
+    [tableView registerNib:[UINib nibWithNibName:NSStringFromClass([AVListCell class]) bundle:nil] forCellReuseIdentifier:AVListCellID];
     tableView.delegate = self;
     tableView.dataSource = self;
     [self.view addSubview:tableView];
     self.tableView = tableView;
     
     AVListModel * model00 = [[AVListModel alloc] init];
-    model00.title = @"利用AVPlayerViewController 播放 mp4 文件";
+    model00.title = @"利用AVPlayerViewController 播放本地mp4 文件";
     AVListModel * model01 = [[AVListModel alloc] init];
-    model01.title = @"利用AVPlayer 播放 mp4 文件";
+    model01.title = @"利用AVPlayer 播放本地mp4 文件";
+    
+    
+    AVListModel * model02 = [[AVListModel alloc] init];
+    model02.title = @"利用AVPlayer 播放相册 文件";
     
     
     [self.data addObject:model00];
     [self.data addObject:model01];
+    [self.data addObject:model02];
 }
 
 #pragma mark UITableViewDelegate,UITableViewDataSource
@@ -82,8 +89,14 @@ static NSString * const AVListCellID = @"AVListCell";
             break;
         case 1:
         {
-            AVPlayerVC * playVC = [[AVPlayerVC alloc] init];
+            AVPlayerPLocalVC * playVC = [[AVPlayerPLocalVC alloc] init];
             [self presentViewController:playVC animated:YES completion:nil];
+        }
+            break;
+        case 2:
+        {
+            AVPlayerPAssetVC * phS = [[AVPlayerPAssetVC alloc] init];
+            [self presentViewController:phS animated:YES completion:nil];
         }
             break;
             

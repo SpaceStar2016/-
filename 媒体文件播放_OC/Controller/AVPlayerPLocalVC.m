@@ -6,13 +6,12 @@
 //  Copyright © 2020 Space Zhong. All rights reserved.
 //
 
-#import "AVPlayerVC.h"
+#import "AVPlayerPLocalVC.h"
 #import <AVFoundation/AVFoundation.h>
-@interface AVPlayerVC ()
-
+@interface AVPlayerPLocalVC ()
 @end
 
-@implementation AVPlayerVC
+@implementation AVPlayerPLocalVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC67D2E824E28D610083FC40 /* AVPlayerPAssetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC67D2E724E28D610083FC40 /* AVPlayerPAssetVC.m */; };
 		FCD1D6D924DAF0F1007EED8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */; };
 		FCD1D6DC24DAF0F1007EED8C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6DB24DAF0F1007EED8C /* SceneDelegate.m */; };
 		FCD1D6DF24DAF0F1007EED8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6DE24DAF0F1007EED8C /* ViewController.m */; };
@@ -27,10 +28,12 @@
 		FCD1D71F24E227DB007EED8C /* AVListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D71D24E227DB007EED8C /* AVListCell.m */; };
 		FCD1D72024E227DB007EED8C /* AVListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D71E24E227DB007EED8C /* AVListCell.xib */; };
 		FCD1D72324E227EE007EED8C /* AVListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D72224E227EE007EED8C /* AVListModel.m */; };
-		FCD1D72624E22C2D007EED8C /* AVPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D72524E22C2D007EED8C /* AVPlayerVC.m */; };
+		FCD1D72624E22C2D007EED8C /* AVPlayerPLocalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D72524E22C2D007EED8C /* AVPlayerPLocalVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC67D2E624E28D610083FC40 /* AVPlayerPAssetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerPAssetVC.h; sourceTree = "<group>"; };
+		FC67D2E724E28D610083FC40 /* AVPlayerPAssetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerPAssetVC.m; sourceTree = "<group>"; };
 		FCD1D6D524DAF0F1007EED8C /* 媒体文件播放_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "媒体文件播放_OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD1D6D724DAF0F1007EED8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,8 +64,8 @@
 		FCD1D71E24E227DB007EED8C /* AVListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVListCell.xib; sourceTree = "<group>"; };
 		FCD1D72124E227EE007EED8C /* AVListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVListModel.h; sourceTree = "<group>"; };
 		FCD1D72224E227EE007EED8C /* AVListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVListModel.m; sourceTree = "<group>"; };
-		FCD1D72424E22C2D007EED8C /* AVPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerVC.h; sourceTree = "<group>"; };
-		FCD1D72524E22C2D007EED8C /* AVPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerVC.m; sourceTree = "<group>"; };
+		FCD1D72424E22C2D007EED8C /* AVPlayerPLocalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerPLocalVC.h; sourceTree = "<group>"; };
+		FCD1D72524E22C2D007EED8C /* AVPlayerPLocalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerPLocalVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +166,10 @@
 			children = (
 				FCD1D71624E22000007EED8C /* AVPlayViewVC.h */,
 				FCD1D71724E22000007EED8C /* AVPlayViewVC.m */,
-				FCD1D72424E22C2D007EED8C /* AVPlayerVC.h */,
-				FCD1D72524E22C2D007EED8C /* AVPlayerVC.m */,
+				FCD1D72424E22C2D007EED8C /* AVPlayerPLocalVC.h */,
+				FCD1D72524E22C2D007EED8C /* AVPlayerPLocalVC.m */,
+				FC67D2E624E28D610083FC40 /* AVPlayerPAssetVC.h */,
+				FC67D2E724E28D610083FC40 /* AVPlayerPAssetVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,9 +282,10 @@
 			files = (
 				FCD1D71824E22000007EED8C /* AVPlayViewVC.m in Sources */,
 				FCD1D6DF24DAF0F1007EED8C /* ViewController.m in Sources */,
+				FC67D2E824E28D610083FC40 /* AVPlayerPAssetVC.m in Sources */,
 				FCD1D71F24E227DB007EED8C /* AVListCell.m in Sources */,
 				FCD1D6D924DAF0F1007EED8C /* AppDelegate.m in Sources */,
-				FCD1D72624E22C2D007EED8C /* AVPlayerVC.m in Sources */,
+				FCD1D72624E22C2D007EED8C /* AVPlayerPLocalVC.m in Sources */,
 				FCD1D6EA24DAF0F2007EED8C /* main.m in Sources */,
 				FCD1D72324E227EE007EED8C /* AVListModel.m in Sources */,
 				FCD1D6DC24DAF0F1007EED8C /* SceneDelegate.m in Sources */,
