@@ -6,11 +6,11 @@
 //  Copyright © 2020 Space Zhong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AVPlayerPAssetVC : UIViewController
+@interface AVPlayerPAssetVC : BaseViewVC
 
 @end
 

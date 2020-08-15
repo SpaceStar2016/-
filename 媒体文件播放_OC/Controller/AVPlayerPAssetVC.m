@@ -17,14 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    UIButton * btn = [[UIButton alloc] init];
-    btn.frame = CGRectMake(0,64,60,60);
-    btn.backgroundColor = [UIColor whiteColor];
-    [btn setTitle:@"返回" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    
     
     //获取相册中的视频文件
     [self allAlbumVideos:nil Completion:^(NSArray * assets)
@@ -125,10 +118,6 @@
     }
 }
 
--(void)goBack
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
 
 @end

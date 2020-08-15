@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bbT-Fa-J7b" customClass="DKMediaSliderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXZ-Fd-y70">
+                    <rect key="frame" x="12" y="11.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-9n-P2i">
+                    <rect key="frame" x="321" y="11.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SeG-Rd-2AN" customClass="DKMediaSlider">
+                    <rect key="frame" x="64" y="7" width="247" height="31"/>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DMe-9n-P2i" firstAttribute="centerY" secondItem="SeG-Rd-2AN" secondAttribute="centerY" id="3hU-vg-4eZ"/>
+                <constraint firstItem="fXZ-Fd-y70" firstAttribute="leading" secondItem="JTZ-Z6-SdR" secondAttribute="leading" constant="12" id="Gya-t0-WQF"/>
+                <constraint firstItem="fXZ-Fd-y70" firstAttribute="centerY" secondItem="SeG-Rd-2AN" secondAttribute="centerY" id="gTC-K5-RIl"/>
+                <constraint firstItem="SeG-Rd-2AN" firstAttribute="centerY" secondItem="bbT-Fa-J7b" secondAttribute="centerY" id="h8W-rd-utH"/>
+                <constraint firstItem="JTZ-Z6-SdR" firstAttribute="trailing" secondItem="DMe-9n-P2i" secondAttribute="trailing" constant="12" id="lKG-do-6el"/>
+                <constraint firstItem="DMe-9n-P2i" firstAttribute="leading" secondItem="SeG-Rd-2AN" secondAttribute="trailing" constant="12" id="uaI-ZT-GAx"/>
+                <constraint firstItem="SeG-Rd-2AN" firstAttribute="leading" secondItem="fXZ-Fd-y70" secondAttribute="trailing" constant="12" id="vUE-wy-HT2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="JTZ-Z6-SdR"/>
+            <connections>
+                <outlet property="beginLabel" destination="fXZ-Fd-y70" id="fDo-eB-pVG"/>
+                <outlet property="endLabel" destination="DMe-9n-P2i" id="pzh-Oz-Xt8"/>
+                <outlet property="slider" destination="SeG-Rd-2AN" id="Qlo-kw-AY3"/>
+            </connections>
+            <point key="canvasLocation" x="-101.5" y="331"/>
+        </view>
+    </objects>
+</document>

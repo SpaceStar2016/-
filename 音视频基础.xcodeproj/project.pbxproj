@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1090C424E7783A00AC59AE /* DKMediaPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1090C324E7783A00AC59AE /* DKMediaPlayerView.xib */; };
+		FC1090C724E7820F00AC59AE /* DKMediaPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1090C624E7820F00AC59AE /* DKMediaPlayerVC.m */; };
+		FC1090CA24E7824900AC59AE /* DKMediaPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1090C924E7824900AC59AE /* DKMediaPlayerView.m */; };
 		FC67D2E824E28D610083FC40 /* AVPlayerPAssetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC67D2E724E28D610083FC40 /* AVPlayerPAssetVC.m */; };
+		FC8F429D24E7B401006981B4 /* DKMediaSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F429924E7B400006981B4 /* DKMediaSliderView.m */; };
+		FC8F429E24E7B401006981B4 /* DKMediaSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F429B24E7B400006981B4 /* DKMediaSlider.m */; };
+		FC8F429F24E7B401006981B4 /* DKMediaSliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC8F429C24E7B400006981B4 /* DKMediaSliderView.xib */; };
+		FC8F42A424E7C084006981B4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F42A224E7C084006981B4 /* UIView+Frame.m */; };
+		FC8F42A824E7C0F4006981B4 /* VideoAndAudioConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F42A724E7C0F4006981B4 /* VideoAndAudioConst.m */; };
+		FCAB453024E78D7500C4014A /* BaseViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAB452F24E78D7500C4014A /* BaseViewVC.m */; };
 		FCD1D6D924DAF0F1007EED8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */; };
 		FCD1D6DC24DAF0F1007EED8C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6DB24DAF0F1007EED8C /* SceneDelegate.m */; };
 		FCD1D6DF24DAF0F1007EED8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6DE24DAF0F1007EED8C /* ViewController.m */; };
@@ -32,8 +41,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1090C324E7783A00AC59AE /* DKMediaPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DKMediaPlayerView.xib; sourceTree = "<group>"; };
+		FC1090C524E7820F00AC59AE /* DKMediaPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKMediaPlayerVC.h; sourceTree = "<group>"; };
+		FC1090C624E7820F00AC59AE /* DKMediaPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKMediaPlayerVC.m; sourceTree = "<group>"; };
+		FC1090C824E7824900AC59AE /* DKMediaPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKMediaPlayerView.h; sourceTree = "<group>"; };
+		FC1090C924E7824900AC59AE /* DKMediaPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKMediaPlayerView.m; sourceTree = "<group>"; };
 		FC67D2E624E28D610083FC40 /* AVPlayerPAssetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerPAssetVC.h; sourceTree = "<group>"; };
 		FC67D2E724E28D610083FC40 /* AVPlayerPAssetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerPAssetVC.m; sourceTree = "<group>"; };
+		FC8F429824E7B400006981B4 /* DKMediaSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKMediaSlider.h; sourceTree = "<group>"; };
+		FC8F429924E7B400006981B4 /* DKMediaSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKMediaSliderView.m; sourceTree = "<group>"; };
+		FC8F429A24E7B400006981B4 /* DKMediaSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKMediaSliderView.h; sourceTree = "<group>"; };
+		FC8F429B24E7B400006981B4 /* DKMediaSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKMediaSlider.m; sourceTree = "<group>"; };
+		FC8F429C24E7B400006981B4 /* DKMediaSliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DKMediaSliderView.xib; sourceTree = "<group>"; };
+		FC8F42A224E7C084006981B4 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FC8F42A324E7C084006981B4 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		FC8F42A524E7C0AF006981B4 /* VideoAndAudio.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAndAudio.pch; sourceTree = "<group>"; };
+		FC8F42A624E7C0F4006981B4 /* VideoAndAudioConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAndAudioConst.h; sourceTree = "<group>"; };
+		FC8F42A724E7C0F4006981B4 /* VideoAndAudioConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAndAudioConst.m; sourceTree = "<group>"; };
+		FCAB452E24E78D7500C4014A /* BaseViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewVC.h; sourceTree = "<group>"; };
+		FCAB452F24E78D7500C4014A /* BaseViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewVC.m; sourceTree = "<group>"; };
 		FCD1D6D524DAF0F1007EED8C /* 媒体文件播放_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "媒体文件播放_OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD1D6D724DAF0F1007EED8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +112,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC1090B824E775C900AC59AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F429824E7B400006981B4 /* DKMediaSlider.h */,
+				FC8F429B24E7B400006981B4 /* DKMediaSlider.m */,
+				FC8F429A24E7B400006981B4 /* DKMediaSliderView.h */,
+				FC8F429924E7B400006981B4 /* DKMediaSliderView.m */,
+				FC8F429C24E7B400006981B4 /* DKMediaSliderView.xib */,
+				FC1090C824E7824900AC59AE /* DKMediaPlayerView.h */,
+				FC1090C924E7824900AC59AE /* DKMediaPlayerView.m */,
+				FC1090C324E7783A00AC59AE /* DKMediaPlayerView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC1090B924E775D300AC59AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC1090BA24E775DA00AC59AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC1090C524E7820F00AC59AE /* DKMediaPlayerVC.h */,
+				FC1090C624E7820F00AC59AE /* DKMediaPlayerVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC3B897F24E76E3300743139 /* 完整的播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				FC1090BA24E775DA00AC59AE /* Controller */,
+				FC1090B924E775D300AC59AE /* Model */,
+				FC1090B824E775C900AC59AE /* View */,
+			);
+			path = "完整的播放器";
+			sourceTree = "<group>";
+		};
+		FC8F42A024E7C019006981B4 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F42A624E7C0F4006981B4 /* VideoAndAudioConst.h */,
+				FC8F42A724E7C0F4006981B4 /* VideoAndAudioConst.m */,
+				FC8F42A524E7C0AF006981B4 /* VideoAndAudio.pch */,
+				FC8F42A324E7C084006981B4 /* UIView+Frame.h */,
+				FC8F42A224E7C084006981B4 /* UIView+Frame.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		FCAB452C24E78D4600C4014A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FC3B897F24E76E3300743139 /* 完整的播放器 */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FCAB452D24E78D5900C4014A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FCAB452E24E78D7500C4014A /* BaseViewVC.h */,
+				FCAB452F24E78D7500C4014A /* BaseViewVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FCD1D64224DAE411007EED8C = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +203,9 @@
 		FCD1D6D624DAF0F1007EED8C /* 媒体文件播放_OC */ = {
 			isa = PBXGroup;
 			children = (
+				FC8F42A024E7C019006981B4 /* Global */,
+				FCAB452D24E78D5900C4014A /* Base */,
+				FCAB452C24E78D4600C4014A /* Modules */,
 				FCD1D71B24E227B4007EED8C /* Controller */,
 				FCD1D71A24E227AB007EED8C /* Model */,
 				FCD1D71924E227A5007EED8C /* View */,
@@ -256,7 +355,9 @@
 				FCD1D6E724DAF0F2007EED8C /* LaunchScreen.storyboard in Resources */,
 				FCD1D6E424DAF0F2007EED8C /* Assets.xcassets in Resources */,
 				FCD1D70724DE355F007EED8C /* readme.md in Resources */,
+				FC8F429F24E7B401006981B4 /* DKMediaSliderView.xib in Resources */,
 				FCD1D6E224DAF0F1007EED8C /* Main.storyboard in Resources */,
+				FC1090C424E7783A00AC59AE /* DKMediaPlayerView.xib in Resources */,
 				FCD1D72024E227DB007EED8C /* AVListCell.xib in Resources */,
 				FCD1D71124DE80E9007EED8C /* src in Resources */,
 			);
@@ -282,10 +383,17 @@
 			files = (
 				FCD1D71824E22000007EED8C /* AVPlayViewVC.m in Sources */,
 				FCD1D6DF24DAF0F1007EED8C /* ViewController.m in Sources */,
+				FC8F42A824E7C0F4006981B4 /* VideoAndAudioConst.m in Sources */,
+				FCAB453024E78D7500C4014A /* BaseViewVC.m in Sources */,
+				FC8F42A424E7C084006981B4 /* UIView+Frame.m in Sources */,
 				FC67D2E824E28D610083FC40 /* AVPlayerPAssetVC.m in Sources */,
 				FCD1D71F24E227DB007EED8C /* AVListCell.m in Sources */,
 				FCD1D6D924DAF0F1007EED8C /* AppDelegate.m in Sources */,
+				FC1090C724E7820F00AC59AE /* DKMediaPlayerVC.m in Sources */,
+				FC1090CA24E7824900AC59AE /* DKMediaPlayerView.m in Sources */,
+				FC8F429E24E7B401006981B4 /* DKMediaSlider.m in Sources */,
 				FCD1D72624E22C2D007EED8C /* AVPlayerPLocalVC.m in Sources */,
+				FC8F429D24E7B401006981B4 /* DKMediaSliderView.m in Sources */,
 				FCD1D6EA24DAF0F2007EED8C /* main.m in Sources */,
 				FCD1D72324E227EE007EED8C /* AVListModel.m in Sources */,
 				FCD1D6DC24DAF0F1007EED8C /* SceneDelegate.m in Sources */,
@@ -454,6 +562,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U28P45B5T;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/媒体文件播放_OC/Global/VideoAndAudio.pch";
 				INFOPLIST_FILE = "媒体文件播放_OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,6 +582,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U28P45B5T;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/媒体文件播放_OC/Global/VideoAndAudio.pch";
 				INFOPLIST_FILE = "媒体文件播放_OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,6 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U28P45B5T;
 				INFOPLIST_FILE = "媒体文件播放_Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,6 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U28P45B5T;
 				INFOPLIST_FILE = "媒体文件播放_Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

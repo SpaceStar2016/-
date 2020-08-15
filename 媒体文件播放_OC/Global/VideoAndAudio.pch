@@ -1,0 +1,22 @@
+//
+//  Camera.pch
+//  FeiYuCam
+//
+//  Created by ZhongSpace on 2017/8/16.
+//  Copyright © 2017年 ZhongSpace. All rights reserved.
+//
+
+#ifndef Camera_pch
+#define Camera_pch
+
+#ifdef __OBJC__
+
+#import "UIView+Frame.h"
+#import "VideoAndAudioConst.h"
+
+#endif
+
+
+
+
+#endif /* Camera_pch */

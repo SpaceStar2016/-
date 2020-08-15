@@ -14,6 +14,7 @@
 #import "AVPlayViewVC.h"
 #import "AVPlayerPLocalVC.h"
 #import "AVPlayerPAssetVC.h"
+#import "DKMediaPlayerVC.h"
 //#import <AVFoundation/AVFoundation.h>
 
 static NSString * const AVListCellID = @"AVListCell";
@@ -51,9 +52,19 @@ static NSString * const AVListCellID = @"AVListCell";
     model02.title = @"利用AVPlayer 播放相册 文件";
     
     
+    AVListModel * model03 = [[AVListModel alloc] init];
+    model03.title = @"一个完整的播放器(基于AVPlayer)";
+    
+    
+    AVListModel * model04 = [[AVListModel alloc] init];
+    model04.title = @"多文件同时播放";
+    
+    
     [self.data addObject:model00];
     [self.data addObject:model01];
     [self.data addObject:model02];
+    [self.data addObject:model03];
+    [self.data addObject:model04];
 }
 
 #pragma mark UITableViewDelegate,UITableViewDataSource
@@ -99,6 +110,11 @@ static NSString * const AVListCellID = @"AVListCell";
             [self presentViewController:phS animated:YES completion:nil];
         }
             break;
+        case 3:
+        {
+            DKMediaPlayerVC * vc = [[DKMediaPlayerVC alloc] initWithUrl:nil];
+            [self presentViewController:vc animated:YES completion:nil];
+        }
             
         default:
             break;

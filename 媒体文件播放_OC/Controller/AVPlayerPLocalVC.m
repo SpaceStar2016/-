@@ -15,14 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    UIButton * btn = [[UIButton alloc] init];
-    btn.frame = CGRectMake(0,64,60,60);
-    btn.backgroundColor = [UIColor whiteColor];
-    [btn setTitle:@"返回" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    
     
     
     NSString * paaa = [[NSBundle mainBundle] pathForResource:@"src" ofType:nil];
@@ -39,10 +32,7 @@
     [player play];
 }
 
--(void)goBack
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 
 /*
 #pragma mark - Navigation
