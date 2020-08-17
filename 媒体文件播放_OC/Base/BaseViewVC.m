@@ -41,6 +41,12 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.view bringSubviewToFront:self.backButton];
+}
+
 -(void)goBack
 {
     [self dismissViewControllerAnimated:YES completion:nil];

@@ -1,8 +1,8 @@
 //
-//  DKMediaPlayerVC.h
+//  SysCameraCapture.h
 //  媒体文件播放_OC
 //
-//  Created by Space Zhong on 2020/8/15.
+//  Created by Space Zhong on 2020/8/17.
 //  Copyright © 2020 Space Zhong. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DKMediaPlayerVC : BaseViewVC
--(instancetype)initWithUrl:(nullable NSString *)url;
+@interface SysCameraLaunch : BaseViewVC
+
 @end
 
 NS_ASSUME_NONNULL_END

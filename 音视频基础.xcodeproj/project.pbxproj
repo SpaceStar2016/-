@@ -16,10 +16,11 @@
 		FC8F429F24E7B401006981B4 /* DKMediaSliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC8F429C24E7B400006981B4 /* DKMediaSliderView.xib */; };
 		FC8F42A424E7C084006981B4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F42A224E7C084006981B4 /* UIView+Frame.m */; };
 		FC8F42A824E7C0F4006981B4 /* VideoAndAudioConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F42A724E7C0F4006981B4 /* VideoAndAudioConst.m */; };
+		FC8F42AB24EAB678006981B4 /* SysCameraLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F42AA24EAB678006981B4 /* SysCameraLaunch.m */; };
 		FCAB453024E78D7500C4014A /* BaseViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAB452F24E78D7500C4014A /* BaseViewVC.m */; };
 		FCD1D6D924DAF0F1007EED8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */; };
 		FCD1D6DC24DAF0F1007EED8C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6DB24DAF0F1007EED8C /* SceneDelegate.m */; };
-		FCD1D6DF24DAF0F1007EED8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6DE24DAF0F1007EED8C /* ViewController.m */; };
+		FCD1D6DF24DAF0F1007EED8C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D6DE24DAF0F1007EED8C /* MainVC.m */; };
 		FCD1D6E224DAF0F1007EED8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D6E024DAF0F1007EED8C /* Main.storyboard */; };
 		FCD1D6E424DAF0F2007EED8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D6E324DAF0F2007EED8C /* Assets.xcassets */; };
 		FCD1D6E724DAF0F2007EED8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D6E524DAF0F2007EED8C /* LaunchScreen.storyboard */; };
@@ -58,6 +59,8 @@
 		FC8F42A524E7C0AF006981B4 /* VideoAndAudio.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAndAudio.pch; sourceTree = "<group>"; };
 		FC8F42A624E7C0F4006981B4 /* VideoAndAudioConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAndAudioConst.h; sourceTree = "<group>"; };
 		FC8F42A724E7C0F4006981B4 /* VideoAndAudioConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAndAudioConst.m; sourceTree = "<group>"; };
+		FC8F42A924EAB678006981B4 /* SysCameraLaunch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysCameraLaunch.h; sourceTree = "<group>"; };
+		FC8F42AA24EAB678006981B4 /* SysCameraLaunch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysCameraLaunch.m; sourceTree = "<group>"; };
 		FCAB452E24E78D7500C4014A /* BaseViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewVC.h; sourceTree = "<group>"; };
 		FCAB452F24E78D7500C4014A /* BaseViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewVC.m; sourceTree = "<group>"; };
 		FCD1D6D524DAF0F1007EED8C /* 媒体文件播放_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "媒体文件播放_OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +68,8 @@
 		FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FCD1D6DA24DAF0F1007EED8C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		FCD1D6DB24DAF0F1007EED8C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		FCD1D6DD24DAF0F1007EED8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FCD1D6DE24DAF0F1007EED8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FCD1D6DD24DAF0F1007EED8C /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		FCD1D6DE24DAF0F1007EED8C /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		FCD1D6E124DAF0F1007EED8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCD1D6E324DAF0F2007EED8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD1D6E624DAF0F2007EED8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -214,8 +217,8 @@
 				FCD1D6D824DAF0F1007EED8C /* AppDelegate.m */,
 				FCD1D6DA24DAF0F1007EED8C /* SceneDelegate.h */,
 				FCD1D6DB24DAF0F1007EED8C /* SceneDelegate.m */,
-				FCD1D6DD24DAF0F1007EED8C /* ViewController.h */,
-				FCD1D6DE24DAF0F1007EED8C /* ViewController.m */,
+				FCD1D6DD24DAF0F1007EED8C /* MainVC.h */,
+				FCD1D6DE24DAF0F1007EED8C /* MainVC.m */,
 				FCD1D6E024DAF0F1007EED8C /* Main.storyboard */,
 				FCD1D6E324DAF0F2007EED8C /* Assets.xcassets */,
 				FCD1D6E524DAF0F2007EED8C /* LaunchScreen.storyboard */,
@@ -269,6 +272,8 @@
 				FCD1D72524E22C2D007EED8C /* AVPlayerPLocalVC.m */,
 				FC67D2E624E28D610083FC40 /* AVPlayerPAssetVC.h */,
 				FC67D2E724E28D610083FC40 /* AVPlayerPAssetVC.m */,
+				FC8F42A924EAB678006981B4 /* SysCameraLaunch.h */,
+				FC8F42AA24EAB678006981B4 /* SysCameraLaunch.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -382,13 +387,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD1D71824E22000007EED8C /* AVPlayViewVC.m in Sources */,
-				FCD1D6DF24DAF0F1007EED8C /* ViewController.m in Sources */,
+				FCD1D6DF24DAF0F1007EED8C /* MainVC.m in Sources */,
 				FC8F42A824E7C0F4006981B4 /* VideoAndAudioConst.m in Sources */,
 				FCAB453024E78D7500C4014A /* BaseViewVC.m in Sources */,
 				FC8F42A424E7C084006981B4 /* UIView+Frame.m in Sources */,
 				FC67D2E824E28D610083FC40 /* AVPlayerPAssetVC.m in Sources */,
 				FCD1D71F24E227DB007EED8C /* AVListCell.m in Sources */,
 				FCD1D6D924DAF0F1007EED8C /* AppDelegate.m in Sources */,
+				FC8F42AB24EAB678006981B4 /* SysCameraLaunch.m in Sources */,
 				FC1090C724E7820F00AC59AE /* DKMediaPlayerVC.m in Sources */,
 				FC1090CA24E7824900AC59AE /* DKMediaPlayerView.m in Sources */,
 				FC8F429E24E7B401006981B4 /* DKMediaSlider.m in Sources */,

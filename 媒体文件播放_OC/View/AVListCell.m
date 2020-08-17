@@ -23,6 +23,12 @@
 {
     _model = model;
     self.ttLabel.text  = model.title;
+    if (model.isMain) {
+        self.ttLabel.textColor = [UIColor redColor];
+    }else
+    {
+        self.ttLabel.textColor = [UIColor blackColor];
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

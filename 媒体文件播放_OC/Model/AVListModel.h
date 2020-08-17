@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AVListModel : NSObject
 @property(nonatomic,copy)NSString * title;
+@property(nonatomic,assign)BOOL isMain;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Space Zhong. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainVC.h"
 #import <AVKit/AVKit.h>
 #import "AVPlayViewVC.h"
 #import "AVListModel.h"
@@ -15,17 +15,18 @@
 #import "AVPlayerPLocalVC.h"
 #import "AVPlayerPAssetVC.h"
 #import "DKMediaPlayerVC.h"
+#import "SysCameraLaunch.h"
 //#import <AVFoundation/AVFoundation.h>
 
 static NSString * const AVListCellID = @"AVListCell";
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface MainVC ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView * tableView;
 @property(nonatomic,strong)NSMutableArray * data;
 @property(nonatomic,strong)AVPlayerViewController * playViewVC;
 @end
 
-@implementation ViewController
+@implementation MainVC
 
 - (void)viewDidLoad {
     
@@ -42,6 +43,8 @@ static NSString * const AVListCellID = @"AVListCell";
     [self.view addSubview:tableView];
     self.tableView = tableView;
     
+    
+    
     AVListModel * model00 = [[AVListModel alloc] init];
     model00.title = @"利用AVPlayerViewController 播放本地mp4 文件";
     AVListModel * model01 = [[AVListModel alloc] init];
@@ -53,11 +56,16 @@ static NSString * const AVListCellID = @"AVListCell";
     
     
     AVListModel * model03 = [[AVListModel alloc] init];
+    model03.isMain = YES;
     model03.title = @"一个完整的播放器(基于AVPlayer)";
     
     
     AVListModel * model04 = [[AVListModel alloc] init];
-    model04.title = @"多文件同时播放";
+    model04.title = @"调用系统相机采集视频";
+    
+    
+    AVListModel * model05 = [[AVListModel alloc] init];
+    model05.title = @"系统相机采集音视频写到本地";
     
     
     [self.data addObject:model00];
@@ -65,6 +73,7 @@ static NSString * const AVListCellID = @"AVListCell";
     [self.data addObject:model02];
     [self.data addObject:model03];
     [self.data addObject:model04];
+    [self.data addObject:model05];
 }
 
 #pragma mark UITableViewDelegate,UITableViewDataSource
@@ -112,9 +121,17 @@ static NSString * const AVListCellID = @"AVListCell";
             break;
         case 3:
         {
+#warning TODO 显示视频信息
             DKMediaPlayerVC * vc = [[DKMediaPlayerVC alloc] initWithUrl:nil];
             [self presentViewController:vc animated:YES completion:nil];
         }
+            break;
+            case 4:
+        {
+            SysCameraLaunch * vc = [[SysCameraLaunch alloc] init];
+            [self presentViewController:vc animated:YES completion:nil];
+        }
+            break;
             
         default:
             break;
@@ -126,6 +143,7 @@ static NSString * const AVListCellID = @"AVListCell";
 {
     return 80;
 }
+
 
 #pragma mark lazy-load
 

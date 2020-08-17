@@ -36,7 +36,6 @@
         self.url = newpath;
     }
     [self.playerView setUrl:self.url];
-    [self.view bringSubviewToFront:self.backButton];
 }
 
 @end
