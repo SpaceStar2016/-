@@ -67,9 +67,7 @@ static NSString * const AVListCellID = @"AVListCell";
     AVListModel * model05 = [[AVListModel alloc] init];
     model05.title = @"合成MP4文件";
     
-    
-    AVListModel * model06 = [[AVListModel alloc] init];
-    model06.title = @"音视频推流";
+
     
     
     [self.data addObject:model00];
