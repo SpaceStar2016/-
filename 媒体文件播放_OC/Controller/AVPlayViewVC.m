@@ -17,8 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString * paaa = [[NSBundle mainBundle] pathForResource:@"src" ofType:nil];
-    NSString * newpath = [NSString stringWithFormat:@"%@/video/笑傲江湖MP4.mp4",paaa];
+    NSString * newpath = VAPathWithName(@"笑傲江湖MP4.mp4");
     NSURL * fileUrl = [NSURL fileURLWithPath:newpath];
     AVPlayer * play = [AVPlayer playerWithURL:fileUrl];
     self.videoGravity = AVLayerVideoGravityResizeAspect;

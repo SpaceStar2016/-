@@ -39,6 +39,11 @@
 		FCD1D72024E227DB007EED8C /* AVListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD1D71E24E227DB007EED8C /* AVListCell.xib */; };
 		FCD1D72324E227EE007EED8C /* AVListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D72224E227EE007EED8C /* AVListModel.m */; };
 		FCD1D72624E22C2D007EED8C /* AVPlayerPLocalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1D72524E22C2D007EED8C /* AVPlayerPLocalVC.m */; };
+		FCE918FF24FB38F800CBB795 /* SLVideoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE918FE24FB38F800CBB795 /* SLVideoTool.m */; };
+		FCE9190224FB393E00CBB795 /* OISamplebufferRef.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9190124FB393E00CBB795 /* OISamplebufferRef.m */; };
+		FCE9190524FB397800CBB795 /* PCMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9190424FB397800CBB795 /* PCMPlayer.m */; };
+		FCE9190824FB3E8C00CBB795 /* SLVideoToolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9190724FB3E8C00CBB795 /* SLVideoToolVC.m */; };
+		FCE9190B24FB3ECD00CBB795 /* jointVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9190A24FB3ECD00CBB795 /* jointVideo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +100,16 @@
 		FCD1D72224E227EE007EED8C /* AVListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVListModel.m; sourceTree = "<group>"; };
 		FCD1D72424E22C2D007EED8C /* AVPlayerPLocalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerPLocalVC.h; sourceTree = "<group>"; };
 		FCD1D72524E22C2D007EED8C /* AVPlayerPLocalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerPLocalVC.m; sourceTree = "<group>"; };
+		FCE918FD24FB38F800CBB795 /* SLVideoTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLVideoTool.h; sourceTree = "<group>"; };
+		FCE918FE24FB38F800CBB795 /* SLVideoTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLVideoTool.m; sourceTree = "<group>"; };
+		FCE9190024FB393E00CBB795 /* OISamplebufferRef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OISamplebufferRef.h; sourceTree = "<group>"; };
+		FCE9190124FB393E00CBB795 /* OISamplebufferRef.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OISamplebufferRef.m; sourceTree = "<group>"; };
+		FCE9190324FB397800CBB795 /* PCMPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMPlayer.h; sourceTree = "<group>"; };
+		FCE9190424FB397800CBB795 /* PCMPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMPlayer.m; sourceTree = "<group>"; };
+		FCE9190624FB3E8C00CBB795 /* SLVideoToolVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLVideoToolVC.h; sourceTree = "<group>"; };
+		FCE9190724FB3E8C00CBB795 /* SLVideoToolVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLVideoToolVC.m; sourceTree = "<group>"; };
+		FCE9190924FB3ECD00CBB795 /* jointVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jointVideo.h; sourceTree = "<group>"; };
+		FCE9190A24FB3ECD00CBB795 /* jointVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jointVideo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +240,16 @@
 				FCD1D6E824DAF0F2007EED8C /* Info.plist */,
 				FCD1D6E924DAF0F2007EED8C /* main.m */,
 				FCD1D70624DE355F007EED8C /* readme.md */,
+				FCE9190024FB393E00CBB795 /* OISamplebufferRef.h */,
+				FCE9190124FB393E00CBB795 /* OISamplebufferRef.m */,
+				FCE918FD24FB38F800CBB795 /* SLVideoTool.h */,
+				FCE918FE24FB38F800CBB795 /* SLVideoTool.m */,
+				FCE9190324FB397800CBB795 /* PCMPlayer.h */,
+				FCE9190424FB397800CBB795 /* PCMPlayer.m */,
+				FCE9190624FB3E8C00CBB795 /* SLVideoToolVC.h */,
+				FCE9190724FB3E8C00CBB795 /* SLVideoToolVC.m */,
+				FCE9190924FB3ECD00CBB795 /* jointVideo.h */,
+				FCE9190A24FB3ECD00CBB795 /* jointVideo.m */,
 			);
 			path = "媒体文件播放_OC";
 			sourceTree = "<group>";
@@ -390,15 +415,20 @@
 				FCD1D6DF24DAF0F1007EED8C /* MainVC.m in Sources */,
 				FC8F42A824E7C0F4006981B4 /* VideoAndAudioConst.m in Sources */,
 				FCAB453024E78D7500C4014A /* BaseViewVC.m in Sources */,
+				FCE9190824FB3E8C00CBB795 /* SLVideoToolVC.m in Sources */,
 				FC8F42A424E7C084006981B4 /* UIView+Frame.m in Sources */,
 				FC67D2E824E28D610083FC40 /* AVPlayerPAssetVC.m in Sources */,
 				FCD1D71F24E227DB007EED8C /* AVListCell.m in Sources */,
 				FCD1D6D924DAF0F1007EED8C /* AppDelegate.m in Sources */,
+				FCE918FF24FB38F800CBB795 /* SLVideoTool.m in Sources */,
 				FC8F42AB24EAB678006981B4 /* SysCameraLaunch.m in Sources */,
 				FC1090C724E7820F00AC59AE /* DKMediaPlayerVC.m in Sources */,
+				FCE9190224FB393E00CBB795 /* OISamplebufferRef.m in Sources */,
 				FC1090CA24E7824900AC59AE /* DKMediaPlayerView.m in Sources */,
 				FC8F429E24E7B401006981B4 /* DKMediaSlider.m in Sources */,
 				FCD1D72624E22C2D007EED8C /* AVPlayerPLocalVC.m in Sources */,
+				FCE9190B24FB3ECD00CBB795 /* jointVideo.m in Sources */,
+				FCE9190524FB397800CBB795 /* PCMPlayer.m in Sources */,
 				FC8F429D24E7B401006981B4 /* DKMediaSliderView.m in Sources */,
 				FCD1D6EA24DAF0F2007EED8C /* main.m in Sources */,
 				FCD1D72324E227EE007EED8C /* AVListModel.m in Sources */,

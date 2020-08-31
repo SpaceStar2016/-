@@ -16,6 +16,7 @@
 #import "AVPlayerPAssetVC.h"
 #import "DKMediaPlayerVC.h"
 #import "SysCameraLaunch.h"
+#import "SLVideoToolVC.h"
 //#import <AVFoundation/AVFoundation.h>
 
 static NSString * const AVListCellID = @"AVListCell";
@@ -67,6 +68,9 @@ static NSString * const AVListCellID = @"AVListCell";
     AVListModel * model05 = [[AVListModel alloc] init];
     model05.title = @"合成MP4文件";
     
+    AVListModel * model06 = [[AVListModel alloc] init];
+    model06.title = @"测试SLVideoTool";
+    
 
     
     
@@ -76,6 +80,7 @@ static NSString * const AVListCellID = @"AVListCell";
     [self.data addObject:model03];
     [self.data addObject:model04];
     [self.data addObject:model05];
+    [self.data addObject:model06];
 }
 
 #pragma mark UITableViewDelegate,UITableViewDataSource
@@ -134,6 +139,15 @@ static NSString * const AVListCellID = @"AVListCell";
             [self presentViewController:vc animated:YES completion:nil];
         }
             break;
+        case 5:
+            break;
+        case 6:
+        {
+            SLVideoToolVC * tVC = [[SLVideoToolVC alloc] init];
+            [self presentViewController:tVC animated:YES completion:nil];
+            
+        }
+            break;
             
         default:
             break;
@@ -161,3 +175,17 @@ static NSString * const AVListCellID = @"AVListCell";
 
 
 @end
+
+/**
+ 使用MP4v2合成视频，发现AVPlayer播放都是从第二个关键帧开始播放，调试发现原来第一个关键帧前面有个SEI。
+
+ 比如iOS，使用AVAssetWriter录制视频，再使用AVAssetReader读取h264数据，再通过MP4v2合成视频，
+ 读取到的第一个关键帧是包含一个SEI的。
+ 读到的第一个h264 buf格式是这样的： SEI 长度   SEI 内容   I帧长度  I帧内容。
+
+ 把SEI这部分东西去掉之后，使用MP4v2写入之后正常了。
+
+ 另外，AVAssetReader读取的数据的时间戳可能不是顺序的，这时候看看视频是不是包含I、B、P帧。
+ 我们在使用使用AVAssetWriter录制视频时，AVVideoProfileLevelKey设置成AVVideoProfileLevelH264BaselineAutoLevel，
+ 视频就只包含I、P帧，时间戳读出来也是顺序的了。
+ */
